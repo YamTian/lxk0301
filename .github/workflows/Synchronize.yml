@@ -10,6 +10,7 @@ on:
     branches: [ main ]
   repository_dispatch:
     types: sync-scripts
+    
 jobs:
   repo-sync:
     env:
