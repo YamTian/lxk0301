@@ -14,7 +14,7 @@ jobs:
   repo-sync:
     env:
       PAT: ${{ secrets.PAT }}
-      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+#       SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
