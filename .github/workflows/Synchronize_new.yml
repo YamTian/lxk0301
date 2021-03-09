@@ -2,7 +2,7 @@ name: Synchronize_new
 
 on:
   schedule:
-    - cron: '0 0-16,23 * * *'
+    - cron: '0 */3 * * *'
   workflow_dispatch:
   watch:
     types: started
