@@ -1,9 +1,12 @@
 //独立COOKIE文件     ck在``里面填写，多账号换行
 
-let ymzhuanggbodyVal = ``
-let ymzhuanspbodyVal = ``
-let ymzhuantxbodyVal = ``
+let bububaotokenVal = ``
 
-let ymzhuancookie = {
 
-    ymzhuanggbodyVal: y
+
+let bububaocookie = {
+    bububaotokenVal: bububaotokenVal,
+
+}
+
+module.exports = bububaocookie
