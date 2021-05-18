@@ -58,7 +58,7 @@ let concurrency = 6 // 并发数
       await $.wait(100)
     }
   } while(retry);
-  if (msgInfo.length <= 0) {
+  if (msgInfo.length >= 0) {
     msgInfo.push(`暂无京喜token数据，请抓取后再试`)
   }
   $.msg($.name, '', msgInfo.join('\n\n'))
