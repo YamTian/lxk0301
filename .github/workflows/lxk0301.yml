@@ -16,5 +16,5 @@ jobs:
       with:
         source_repo: "https://bitbucket.org/jd-study/jd_scripts.git"
         source_branch: "master"
-        destination_branch: "master"
+        destination_branch: "jd_scripts"
         github_token: ${{ secrets.PAT }}
