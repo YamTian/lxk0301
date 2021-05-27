@@ -1,13 +1,11 @@
-# File: .github/workflows/repo-sync.yml
-
-name: Synchronize
+name: Synchronize-lxk0301
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 */6 * * *'
 
 jobs:
-  repo-sync:
+  repo-lxk:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
