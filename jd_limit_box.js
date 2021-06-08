@@ -1,15 +1,26 @@
 /*
-author：tg@chenxing666
-盲盒
-  Quantumult X:
-  [task_local]
-    33 6 * * * 
-  Loon:
-  [Script]
-    cron "33 * * *" 
-  Surge:
-    盲盒 = type=cron,cronexp="33 6 * * *",w
-*/
+盲盒，每日2毛～5毛
+可互助，助力码每日不变，只变日期
+活动入口：京东APP搜索领现金进入
+更新时间：2021-06-07
+已支持IOS双京东账号,Node.js支持N个京东账号
+脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
+============Quantumultx===============
+[task_local]
+#盲盒
+33 0 * * * https://bitbucket.org/jd-study/shylocks/src/master/jd_limit_box.js, tag=盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+
+================Loon==============
+[Script]
+cron "33 0 * * *" script-path=https://bitbucket.org/jd-study/shylocks/src/master/jd_limit_box.js,tag=盲盒
+
+===============Surge=================
+盲盒 = type=cron,cronexp="33 0 * * *",wake-system=1,timeout=3600,script-path=https://bitbucket.org/jd-study/shylocks/src/master/jd_limit_box.js
+
+============小火箭=========
+盲盒 = type=cron,script-path=https://bitbucket.org/jd-study/shylocks/src/master/jd_limit_box.js, cronexpr="33 0 * * *", timeout=3600, enable=true
+ */
+
 const $ = new Env('盲盒');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
