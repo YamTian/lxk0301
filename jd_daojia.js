@@ -1,3 +1,16 @@
+/*
+author：tg@chenxing666
+京东到家
+  Quantumult X:
+  [task_local]
+    43 0 * * * 
+  Loon:
+  [Script]
+    cron "43 0 * * *" 
+  Surge:
+    京东到家 = type=cron,cronexp="43 0 * * *",w
+*/
+
 const $ = new Env('京东到家');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
