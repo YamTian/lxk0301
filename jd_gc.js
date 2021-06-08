@@ -1,6 +1,14 @@
 /*
 author：tg@chenxing666
 国潮
+  Quantumult X:
+  [task_local]
+    33 0 * * * 
+  Loon:
+  [Script]
+    cron "33 0 * * *" 
+  Surge:
+    国潮 = type=cron,cronexp="33 0 * * *",w
 */
 const $ = new Env('国潮');
 
