@@ -8,17 +8,17 @@
 ============Quantumultx===============
 [task_local]
 #盲盒
-33 0 * * * https://bitbucket.org/jd-study/shylocks/src/master/jd_limit_box.js, tag=盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+43 0 * * * https://bitbucket.org/jd-study/shylocks/src/master/jd_limit_box.js, tag=盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "33 0 * * *" script-path=https://bitbucket.org/jd-study/shylocks/src/master/jd_limit_box.js,tag=盲盒
+cron "43 0 * * *" script-path=https://bitbucket.org/jd-study/shylocks/src/master/jd_limit_box.js,tag=盲盒
 
 ===============Surge=================
-盲盒 = type=cron,cronexp="33 0 * * *",wake-system=1,timeout=3600,script-path=https://bitbucket.org/jd-study/shylocks/src/master/jd_limit_box.js
+盲盒 = type=cron,cronexp="43 0 * * *",wake-system=1,timeout=3600,script-path=https://bitbucket.org/jd-study/shylocks/src/master/jd_limit_box.js
 
 ============小火箭=========
-盲盒 = type=cron,script-path=https://bitbucket.org/jd-study/shylocks/src/master/jd_limit_box.js, cronexpr="33 0 * * *", timeout=3600, enable=true
+盲盒 = type=cron,script-path=https://bitbucket.org/jd-study/shylocks/src/master/jd_limit_box.js, cronexpr="43 0 * * *", timeout=3600, enable=true
  */
 
 const $ = new Env('盲盒');
