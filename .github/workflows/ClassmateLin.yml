@@ -17,7 +17,7 @@ jobs:
       with:
         source_repo: "https://github.com/ClassmateLin/jd_scripts.git"
         source_branch: "master"
-        destination_branch: "jd_scripts_python3"
+        destination_branch: "ClassmateLin"
         github_token: ${{ secrets.PAT }}
         
     - name: Delete Workflow Runs # 删除执行日志
